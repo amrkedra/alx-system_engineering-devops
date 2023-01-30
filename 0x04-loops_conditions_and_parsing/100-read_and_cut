@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-#Script that displays the content of the file /etc/passwd
-while IFS= read -r line
+# Read and extract fields in file
+
+FILE="/etc/passwd"
+
+while read LINE
 do
-    echo "$line" | cut -f 1,3,6 -d ':'
-done < "/etc/passwd"
+    echo "$LINE" | cut -d ":" -f1,3,6
+done < "$FILE"
