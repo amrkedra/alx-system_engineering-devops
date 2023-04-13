@@ -1,0 +1,19 @@
+When you type "https://www.google.com" in your browser and hit Enter, a series of processes happen behind the scenes that ultimately result in displaying Google's website on your screen. In this blog post, we will explain each step of this process and how they work together to deliver the website.
+
+DNS request: The first step is your browser sending a request to a Domain Name System (DNS) server to convert the URL you typed into an IP address. The DNS server matches the URL with the IP address of the server that hosts the website, in this case, Google's website.
+
+TCP/IP: Once the DNS server finds the IP address, a Transmission Control Protocol (TCP) connection is established between the client (your browser) and the server (Google's website). This connection is done using Internet Protocol (IP) to ensure that the client and server can communicate with each other.
+
+Firewall: The firewall is a software program that monitors and filters incoming and outgoing network traffic based on predetermined security rules. It checks whether the incoming traffic is legitimate and safe to access the network and blocks any potential threats.
+
+HTTPS/SSL: After the connection is established, the browser and server establish a secure HTTPS connection using the Secure Sockets Layer (SSL) protocol, now known as Transport Layer Security (TLS). SSL/TLS encryption ensures that the data exchanged between the client and server is encrypted, making it difficult for any third party to access it.
+
+Load-balancer: In the next step, the request is passed through a load balancer. A load balancer is a device that distributes incoming network traffic across multiple servers. In Google's case, the load balancer directs the request to one of Google's many servers that can handle the request.
+
+Web server: Once the request reaches the server, it is handled by the web server software. The web server retrieves the files and resources necessary to display the website and sends them back to the client's browser.
+
+Application server: Sometimes, web pages require dynamic content, such as real-time data or customized content. In such cases, the request is passed from the web server to an application server. The application server processes the request, retrieves the required data from the database, and sends it back to the web server, which then sends it back to the client's browser.
+
+Database: Lastly, the application server sends a query to the database to retrieve the required data. The database contains all the data required for the website, such as user profiles, search results, or product information.
+
+In conclusion, typing "https://www.google.com" and pressing Enter triggers a complex series of processes, from DNS requests to database queries, to deliver the website to your browser. Understanding these steps can help us appreciate the complexity of the internet and the technologies that make it work.
